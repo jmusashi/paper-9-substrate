@@ -16,7 +16,7 @@
 
 \- ORCID: 0009-0000-7620-645X | https://orcid.org/0009-0000-7620-645X
 
-\- Zenodo DOI: 10.5281/zenodo.20589683 (published — June 2026)
+\- Zenodo DOI: 10.5281/zenodo.20592885 (https://doi.org/10.5281/zenodo.20592885) (published — June 2026)
 
 \- GitHub: https://github.com/jmusashi/paper-9-substrate
 
