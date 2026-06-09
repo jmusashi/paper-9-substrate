@@ -1,0 +1,43 @@
+3Spire Invariant – Simulation Architecture (Figure 15.1)
+
++------------------------------------------------------+
+|                 INVARIANT ENVELOPE E(t)              |
++------------------------------------------------------+
+            |                     |                    |
+            v                     v                    v
+
+        +--------+           +--------+           +--------+
+        | AGENT 0|           | AGENT 1|           | AGENT 2|
+        +--------+           +--------+           +--------+
+        | S1 Id  |           | S1 Id  |           | S1 Id  |
+        | S2 Rat |           | S2 Rat |           | S2 Rat |
+        | S3 Gov |           | S3 Gov |           | S3 Gov |
+        +--------+           +--------+           +--------+
+
+            \                     |                    /
+             \                    |                   /
+              \                   |                  /
+               v                  v                 v
+
+                    +------------------------+
+                    |      ORCHESTRATOR      |
+                    |  - Monitor             |
+                    |  - Detect collapse     |
+                    |  - Apply f(S)          |
+                    |  - Preserve envelope   |
+                    +------------------------+
+
+                             |
+                             v
+
+                    +------------------------+
+                    |  INVARIANT ATTRACTOR   |
+                    |        λ = 50          |
+                    +------------------------+
+
+Collapse-phase flow (Scenario A – Identity collapse):
+- S1 = 0, S2 > 0, S3 > 0
+- Orchestrator detects collapse
+- f(S): S1 = (S2 + S3) / 2
+- Envelope E(t) remains 1
+- Verdict: CANONICAL COMPLIANT
