@@ -1,4 +1,4 @@
-\# Paper 9 — Substrate Repository
+# Paper 9 — Substrate Repository
 
 
 
@@ -12,45 +12,45 @@
 
 
 
-\## Provenance
+## Provenance
 
-\- ORCID: 0009-0000-7620-645X | https://orcid.org/0009-0000-7620-645X
+- ORCID: 0009-0000-7620-645X | https://orcid.org/0009-0000-7620-645X
 
-\- Zenodo DOI: 10.5281/zenodo.20592885 (https://doi.org/10.5281/zenodo.20592885) (published — June 2026)
+- Zenodo DOI: 10.5281/zenodo.20592885 (https://doi.org/10.5281/zenodo.20592885) (published — June 2026)
 
-\- GitHub: https://github.com/jmusashi/paper-9-substrate
+- GitHub: https://github.com/jmusashi/paper-9-substrate
 
-\- Predecessor: Paper 8 — The 3Sync Architecture (DOI: 10.5281/zenodo.20406312)
+- Predecessor: Paper 8 — The 3Sync Architecture (DOI: 10.5281/zenodo.20406312)
 
 
 
-\## The 3Spire Invariant
+## The 3Spire Invariant
 
 A triadic architecture that preserves identity, rationale, and governance
 
 continuity across time, context, and agentic state.
 
 
+```
+| Spire | Role                                     |
 
-| Spire | Role |
+|----------------------------|---------------------|
 
-|-------|------|
+| S1 — Identity Continuity   | Root spire          |
 
-| S1 — Identity Continuity | Root spire |
+| S2 — Rationale Continuity  | Stabilizing spire   |
 
-| S2 — Rationale Continuity | Stabilizing spire |
+| S3 — Governance Continuity | Regulating spire    |
 
-| S3 — Governance Continuity | Regulating spire |
+```
 
-
-
-\## Lineage
+## Lineage
 
 DCE Foundation (Papers 1–8) → Paper 9 (3Spire Invariant) → Future Expansions (Paper 10.x)
 
 
 
-\## Keywords
+## Keywords
 
 Decision Continuity Engineering · 3Spire Invariant · Governance Substrate ·
 
