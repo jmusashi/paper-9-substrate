@@ -32,16 +32,13 @@ continuity across time, context, and agentic state.
 
 
 ```
-| Spire | Role                                     |
-
+|--------------------------------------------------|
+| Spire                      |  Role               |
 |----------------------------|---------------------|
-
 | S1 — Identity Continuity   | Root spire          |
-
 | S2 — Rationale Continuity  | Stabilizing spire   |
-
 | S3 — Governance Continuity | Regulating spire    |
-
+|--------------------------------------------------|
 ```
 
 ## Lineage
