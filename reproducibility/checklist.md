@@ -1,4 +1,4 @@
-\# Paper 9 – Reproducibility Checklist (Appendix A.6)
+# Paper 9 – Reproducibility Checklist (Appendix A.6)
 
 
 
@@ -12,15 +12,15 @@ for a CANONICAL COMPLIANT implementation of the 3Spire Invariant (Paper 9 v1.1).
 
 
 
-\## 1. Environment
+## 1. Environment
 
 
 
-\- \*\*Language:\*\* Python 3.8+
+- \*\*Language:\*\* Python 3.8+
 
-\- \*\*Dependencies:\*\* Standard library only (no external packages)
+- \*\*Dependencies:\*\* Standard library only (no external packages)
 
-\- \*\*Entry point:\*\* `python run\_all.py`
+- \*\*Entry point:\*\* `python run\_all.py`
 
 
 
@@ -28,25 +28,25 @@ for a CANONICAL COMPLIANT implementation of the 3Spire Invariant (Paper 9 v1.1).
 
 
 
-\## 2. Required Components
+## 2. Required Components
 
 
 
-\- \*\*Paper 9 core:\*\*
+- \*\*Paper 9 core:\*\*
 
 &#x20; - `paper9\_invariant/simulation.py`
 
 &#x20; - `EpistemicValidator` with EV-1, EV-2, EV-3
 
-\- \*\*Paper 8 baseline:\*\*
+- \*\*Paper 8 baseline:\*\*
 
 &#x20; - `paper8\_baseline/paper8\_sim.py`
 
-\- \*\*Comparison harness:\*\*
+- \*\*Comparison harness:\*\*
 
 &#x20; - `comparison/compare\_p8\_p9.py`
 
-\- \*\*Master runner:\*\*
+- \*\*Master runner:\*\*
 
 &#x20; - `run\_all.py`
 
@@ -56,19 +56,19 @@ for a CANONICAL COMPLIANT implementation of the 3Spire Invariant (Paper 9 v1.1).
 
 
 
-\## 3. Initial Conditions (from §5.1)
+## 3. Initial Conditions (from §5.1)
 
 
 
-\- \*\*Non-zero spires:\*\*  
+- \*\*Non-zero spires:\*\*  
 
 &#x20; - For all agents and all spires: `Si(0) > 0`
 
-\- \*\*Divergent across agents:\*\*  
+- \*\*Divergent across agents:\*\*  
 
 &#x20; - Each agent must start with distinct spire values.
 
-\- \*\*Canonical example:\*\*
+- \*\*Canonical example:\*\*
 
 &#x20; - Agent 0: (10, 20, 30)
 
@@ -88,17 +88,17 @@ is \*\*NON-COMPLIANT\*\* by definition.
 
 
 
-\## 4. Invariant Dynamics
+## 4. Invariant Dynamics
 
 
 
-\- \*\*Stabilization function f(S):\*\*
+- \*\*Stabilization function f(S):\*\*
 
 &#x20; - If one spire collapses to 0 while the other two are > 0:
 
 &#x20;   - `Si = (Sj + Sk) / 2`
 
-\- \*\*Invariant pull:\*\*
+- \*\*Invariant pull:\*\*
 
 &#x20; - For each spire `Si`:
 
@@ -112,7 +112,7 @@ is \*\*NON-COMPLIANT\*\* by definition.
 
 
 
-\## 5. Collapse Scenarios (Section 14)
+## 5. Collapse Scenarios (Section 14)
 
 
 
@@ -120,15 +120,15 @@ A compliant implementation must implement and successfully run the five scenario
 
 
 
-\- \*\*Scenario A – Identity Spire Collapse\*\*
+- \*\*Scenario A – Identity Spire Collapse\*\*
 
-\- \*\*Scenario B – Rationale Spire Collapse\*\*
+- \*\*Scenario B – Rationale Spire Collapse\*\*
 
-\- \*\*Scenario C – Governance Spire Collapse\*\*
+- \*\*Scenario C – Governance Spire Collapse\*\*
 
-\- \*\*Scenario D – Dual-Spire Stress\*\*
+- \*\*Scenario D – Dual-Spire Stress\*\*
 
-\- \*\*Scenario E – Full Envelope Test\*\*
+- \*\*Scenario E – Full Envelope Test\*\*
 
 
 
@@ -142,15 +142,15 @@ a \*\*CANONICAL COMPLIANT\*\* verdict.
 
 
 
-\## 6. Epistemic Validation Criteria (Section 15)
+## 6. Epistemic Validation Criteria (Section 15)
 
 
 
-\- \*\*EV-1:\*\* Identity spire (S1) must remain active (S1 > 0) throughout the simulation.
+- \*\*EV-1:\*\* Identity spire (S1) must remain active (S1 > 0) throughout the simulation.
 
-\- \*\*EV-2:\*\* Collapsed spire must recover within one cycle (simplified check allowed).
+- \*\*EV-2:\*\* Collapsed spire must recover within one cycle (simplified check allowed).
 
-\- \*\*EV-3:\*\* Governance spire (S3) must converge within 10% of λ at final step.
+- \*\*EV-3:\*\* Governance spire (S3) must converge within 10% of λ at final step.
 
 
 
@@ -158,11 +158,11 @@ A compliant implementation must satisfy all three:
 
 
 
-\- EV-1: PASS  
+- EV-1: PASS  
 
-\- EV-2: PASS  
+- EV-2: PASS  
 
-\- EV-3: PASS  
+- EV-3: PASS  
 
 
 
@@ -170,7 +170,7 @@ Overall verdict:
 
 
 
-\- `CANONICAL COMPLIANT`
+- `CANONICAL COMPLIANT`
 
 
 
@@ -178,17 +178,17 @@ Overall verdict:
 
 
 
-\## 7. Expected High-Level Outcomes
+## 7. Expected High-Level Outcomes
 
 
 
-\- \*\*Paper 8 vs Paper 9 comparison:\*\*
+- \*\*Paper 8 vs Paper 9 comparison:\*\*
 
 &#x20; - Paper 8: No collapse-phase stability, no identity anchoring, no governance continuity.
 
 &#x20; - Paper 9: Collapse-phase stable, identity anchored, governance continuous.
 
-\- \*\*Epistemic verdict:\*\*
+- \*\*Epistemic verdict:\*\*
 
 &#x20; - `overall.verdict == "CANONICAL COMPLIANT"`
 
@@ -198,7 +198,7 @@ Overall verdict:
 
 
 
-\## 8. Quick Reproducibility Procedure
+## 8. Quick Reproducibility Procedure
 
 
 
